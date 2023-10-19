@@ -1,0 +1,62 @@
+/* Default font type across website */
+*{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* Background color and font color */
+body{
+  background-color: #FEFAE0;
+  color:  #1b2410; 
+}
+/* Headings are big and centered */
+h1{
+  text-align: center;
+  font-size: 80px;
+  color:rgb(154, 94, 21);
+  margin: 30px;
+  display: inline-block;
+}
+/* H2s are bigger to complement h1s */
+h2{
+  font-size: 40px;
+}
+/* All headers are centered */
+header {
+  text-align: center;
+}
+/* Footers have basice background color, streches */
+footer{
+  background-color: #dda15e;
+  width: 100%;
+  padding: 30px;
+}
+/* Most spans will be bold unless stated otherwise */
+.bold-text{
+  font-weight: bold;
+}
+/* Removes the bullets and any margins on the list */
+ul {
+  list-style-type: none;
+  margin: 0;
+  background-color: #283618;
+  overflow: hidden;
+  padding: 0;
+}
+/* Moves all the list items to the left */
+li {
+  float: left;
+  padding: 16px;
+} 
+/* Removed the line under links and made them black added padding */
+li a {
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
+  color: #FEFAE0;
+  width: 100%;
+}
+/* Lighter background on hover */
+li a:hover{
+  background-color: #606C38;
+}
+
+

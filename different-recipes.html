@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A look at her famous recipe</title>
+  <link rel="stylesheet" href="stylesheets/css-page-styles.css" />
+  <style>
+    /* Makes list bigger and stand out */
+    pre{
+      font-size: 25px; 
+    } 
+    /* All title headings are the same */
+    .title-text{
+      font-size: 25px; 
+      font-weight: bold;
+    }
+    /* Gives div basic border and properites like a cooking tag */
+    #recipe-class {
+      padding-left: 40px;
+      padding-right: 40px;
+      background-color: #606c38;
+      color: #fefae0;
+      border: 2px dotted #606c38;
+      border-radius: 10px;
+    }
+    /* Background pops on hover */
+    #recipe-class:hover {
+      border: 2px solid #283618;
+    }
+    /* Changing font size of headings in div */
+    #recipe-class h3, #recipe-class h2{
+      font-size: larger;
+      color: #dda15e;
+      display: inline-block;
+    }
+    /* Overriding external css for div alone */
+    #recipe-class li{
+      display: block;
+      background-color: #606c38;
+      padding: none;
+      float: none;
+    }
+  </style>
+</head>
+<!-- Navigation bar -->
+<nav>
+  <ul>
+    <li><a href="index.html">About us</a></li>
+    <li><a href="different-recipes.html">Take a look at her acclaimed recipes!</a></li>
+    <li><a href="order-cookbook.html">Order her famous cookbook</a></li>
+  </ul>
+</nav>
+<!-- Title of page -->
+<header>
+  <h1>Recipe 1: Jollof Rice</h1>
+  <p>Nigerian Style</p>
+</header>
+<body>
+  <main>
+    <!-- Explains basic of jollof -->
+    <section>
+      <h3>The science of Jollof rice</h3>
+      <p>Jollof rice is a West African dish comprising of rice, 
+      tomoatoes, and a stock base. It is consumed alll across Africa as a celebration food. Weddings, 
+      birthdays, and celebrations of birth all across Africa all feature a plate of jollof. Paired with a hearty chicken leg and a side of salad,
+      this meal has amazed and tantalized tounges for centuries. A simple dish, jollof is easy to make (and even easier to mess up). 
+      Vivian's kitchen will provide a comphrehensive look and breakdown of the dish. If you wish to skip to the recipe, click the link below. </p>
+      <!-- Add a link that skips to recipe -->
+      <a href="#recipe-class" class="skip">Skip to main content</a>
+      <!-- Other text -->
+      <h3>Components of Jollof rice</h3>
+      <p>Jollof rice has 3 basic ingredients:</p>
+      <!-- Using pre tag to keep format instead of p tag -->
+      <pre>
+        1. Tomatoes
+        2. Rice
+        3. Stock
+      </pre>
+      <p>In this recipe, you will learn how to make these three component of jollof</p>
+      <!-- Tomato and cooking down the tomato paste -->
+      <p class="title-text">1. Tomatoes</p>
+      <p>The first step to making jollof rice is to cook down some Tomatoes. These don't necessarily 
+      have to be tomatoes, Vivian herself recomends a blend of tomoatoes and tatashe - a less sweet variant of bell pepper. 
+      First, cook down a small onion and some garlic until its translucent and fragrant. You'll know its ready when it starts smelling delicious&excl;
+      Afterwards, the tomatoe blend can be addded. The main point of the base, however, is to cook it down. The tomatoe mix shou
+      ld be thoroughly dry and removed of all water. Any water in the base makes the rice sour and tasti
+      ng of raw tomatoe. </p>
+      <p>Another important part is properly seasoning the base. Curry, thyme, buillion cubes, rosemary.
+      Anthing in the cupboards will do. If the base has no salt, it'll be hard to introduce it once the rice has started.
+      The base must be super seasoned.Meaning, it should taste too salty or sweet.
+      Later, you will have to add water to it so it should be salty enough that diluting it will still give the rice flavour.</p>
+      <!-- Information on rice, second point -->
+      <p class="title-text">2. Rice</p>
+      <p>After the tomatoes have been cooked down and water has been added, you must add rice to your 
+      diluted base. You can use any basic rice you find in store, Vivian uses long-grain rice from superstore but any other can work in a pinch.
+      The rice should be <span class="bold-text">washed</span>. 
+      The amount of water added into the mixture should be about 2 or 3 cups, depending on how much 
+      rice addded. Once the rice is added, you can add more water to make sure the water covers the rice with about half-a-finger of clearance on top.</p>
+      <p>It should be cooked for 20 minutes on medium-high heat until the water in near done. When the water is almost finished, it should be switched 
+      to medium-low heat until the water evaporates or the rice is soft. A little salt or pepper can be added now, to taste.</p>
+      <!-- Explanation of stock -->
+      <p class="title-text">3. the Stock</p>
+      <p>This is the place with the most diveristy. Stock can be store-bought vegetarian or anything in the fridge. 
+      On one notable occasion, vivian took a dollop of stew she'd already made to make a stock for the ric
+      e. Traditionally its beef, or chicken. Whenever you make meat or boil chicken save the stock in your
+      fridge for later. Inthis recipe, Vivian used pork stock from her thanksgiving dinner. In the absence of stock,
+      crushed up buillion cubes mixed with water works just as well. Gravy packets will also work. All the
+      stock does is add another layer of flavouring onto the food and makes it taste that much nicer.</p>
+    </section>
+    <article>
+      <!-- Actual recipe -->
+      <div id="recipe-class"> 
+        <h2>Jollof Rice Recipe:</h2>
+        <h3>Ingredients you'll need</h3>
+        <ol>
+          <li>1 Cup of tomatoe paste or blend</li>
+          <li>A small onion, diced</li>
+          <li>2-3 cloves of garlic, crushed</li>
+          <li>Salt and other seasoning, 3 tsps each</li>
+          <li>2 Cups of Cooking stock (not neccesary)</li>
+          <li>1 Cup of long-grain rice; washed</li>
+          <li>1 Cup of Water</li>
+        </ol>
+        <hr /> <!--Thematic break -->
+        <h3>Cooking instructions</h3>
+        <p>Cook onions and garlic down in medium-low heat for 5-10 minutes or until mixture is fragrant and translucent.</p>
+        <p>Add tomato mixture. Stir slowly and minimally, only enough for the tomatoes to not burn. The goal is to cook the tomatoes down,
+        so stirring continuosly will add to the cooking time. While tomatoes are cooking, add salt, pepper and other spices. </p>
+        <p>Season heavily, and cook tomoatoes for 10-15 minutes on medium-high heat.
+        Tomatoe mix should be salty and savoury by the end</p>
+        <p>Add water, and stock if available until mixture is watery and diluted.Re-season to taste.</p>
+        <p>Add <span class="bold-text">washed</span> rice and stir mixture. Water should cover the rice with a few inches of space extra.</p>
+        <p>Leave pan covered for 10-15 minutes on medium-high heat until water is almost evaporated.
+        Then, turn heat to medium low and constantly check water level and softness of rice until rice is of desired softness.</p>
+      </div>
+    </article>
+    <!-- Video that shows how to make jollof rice -->
+    <section>
+      <h3>A video showing how to make perfect jollof rice</h3>
+      <!-- Link for accessibility -->
+      <a href="https://www.youtube.com/watch?v=z4tNAyRdo70">Click here to go the jollof rice video if doesn't work</a>
+      <figure>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/z4tNAyRdo70?si=HyznA2anS03-KWTk" 
+        title="A video showing how to make jollof rice from Sisi Jeminah's Recipes" 
+        frameborder="0" allowfullscreen></iframe>
+        <figcaption>A video showing how to make Jollof Rice from Sisi Jeminah's Recipes youtube chanel</figcaption>
+      </figure>
+    </section>
+  </main>
+</body>
+<!-- Footer across websites, style is external -->
+<footer>
+  <p>Copyright &copy; 2023 Vivian's Kitchen. All rights reserved.</p>
+  <p>Contact us at: 123-456-789</p>
+</footer>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order the cookbook</title>
+  <link rel="stylesheet" href="stylesheets/css-page-styles.css" />
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    /* Basic form background and styling */
+    form{
+      background-color: #fefae0;
+      padding: 25px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px dotted #dda15e;
+    }
+    /* Input types are uniform and inline */
+    input[type=text], [type=number], [type=tel]{
+      width: 100%;
+      display: inline-block;
+      border: 1px solid #fefae0;
+      margin: 8px 0;
+      padding: 12px 20px;
+      border-radius: 4px 10px;
+      box-sizing: border-box;/* padding and margin included in element size */
+    }
+    /* Submit button */
+    input[type=submit]{
+      width: 100%;
+      background: #283618;
+      color: #fefae0;
+      border: 1px solid #283618;
+      padding: 20px 25px;
+      margin: 4px;
+      font-size: larger;
+    }
+    /* Submit button changes color on hover */
+    input[type=submit]:hover{
+      background: #606c38;
+    }
+    /* Styling all icons  */
+    .icon{
+      padding: 10px;
+      background: #dda15e;
+      min-width: 40px;
+      text-align: center;
+    }
+    /* Fieldset is round and has space */
+    fieldset {
+      background-color: #fefae0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    /* Legend text is in a orange, round box */
+    legend {
+      background-color: #bc6c25;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    /* Radio buttons move right */
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<!-- Navigation bar -->
+<nav>
+  <ul>
+    <li><a href="index.html">About us</a></li>
+    <li><a href="different-recipes.html">Take a look at her acclaimed recipes!</a></li>
+    <li><a href="order-cookbook.html">Order her famous cookbook</a></li>
+  </ul>
+</nav>
+<!-- Heading of webpage, order -->
+<header>
+  <h1>Order the cookbook!</h1>
+</header>
+<body>
+  <main>
+    <!-- Background info on the cookbook -->
+    <section>
+      <h3>Why should you buy Vivian&apos;s inspirational cookbook&quest;</h3>
+      <p>For a small fee of &dollar;30&dot;99 you too can own a copy of a complete collection of recipes.
+      From savoury to sweet and Africa to America this cookbook
+      covers the recipes and tales from a variety of different countries and cultures. Owners of
+      this cookbook will learn more recipes like the one featured on this website
+      <span class="bold-text">and</span> even more&excl;
+      You will get a handwritten letter from our owner herself, the remarkable Vivian&excl;
+      The first 1000 people to buy this cookbook will get a 10&percnt; discount off their purchase! Don&apos;t wait until tomorrow, buy this cookbook now&excl;</p>
+    </section>
+    <!-- Image of the author of the cookbook -->
+    <figure>
+      <img src="Images/pic-of-author.jpg" alt="A picture of the author of the cookbook
+      and the founder of Vivian's Kitchen" width="300" height="300" />
+      <figcaption>A picture of the author of the cookbook and the founder of Vivian's Kitchen</figcaption>
+    </figure>
+    <!-- Order form-->
+    <article>
+      <h2>Disclaimer: This form is not secure. Do Not Input any personal Information</h2>
+      <form method="get">
+        <!-- First name and last name with required in both label and input -->
+        <i class="fa fa-user icon"></i>
+        <label for="f-name">First Name: (required)</label>
+        <input type="text" id="f-name" name="firstname" placeholder="John" required/>
+        <label for="l-name">Last Name: (required)</label>
+        <input type="text" id="l-name" name="lastname" placeholder="Doe" required />
+        <!-- Shows and updates cost based on user input -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="0" />
+        <label for="total">Total Cost:</label>
+        <span id="total">0</span><br />
+        <!-- Radio button asking user what type of book they want -->
+        <fieldset>
+          <legend>What type of book do you want, hardback or paperback?</legend>
+          <label for="hardback">Hardback</label>
+          <input type="radio" id="hardback" name="book-type" value="hardback" />
+          <label for="paperback">Paperback</label>
+          <input type="radio" id="paperback" name="book-type" value="paperback" />
+        </fieldset>
+        <!-- Adds an icon to the phone number field -->
+        <i class="fa fa-phone icon"></i>
+        <label for="ph-num">Phone number:</label> 
+        <input type="tel" id="ph-num" name="phone-num" />
+        <!-- Submit button -->
+        <input type="submit" id="submit-but" />
+      </form>
+    </article>
+  </main>
+</body>
+<!-- Increment cost based on user input -->
+<script>
+  // Gets and turns quality and total into var
+  const quantityInput = document.getElementById('quantity');
+  const totalElement = document.getElementById('total');
+  function updateTotal() {
+    // Quality's value turned into float for decimal calculation
+    const quantity = parseFloat(quantityInput.value);
+    const total = 30.99 * quantity;
+    totalElement.textContent = '$' + total.toFixed(2);//Adds a dollar sign and rounds num
+  }
+  //Checks if user changes quality, run function if it does
+  quantityInput.addEventListener('input', updateTotal);
+</script>
+<!-- Footer across websites, style is external -->
+<footer>
+  <p>Copyright &copy; 2023 Vivian's Kitchen. All rights reserved.</p>
+  <p>Contact us at: 123-456-789</p>
+</footer>
+</html>

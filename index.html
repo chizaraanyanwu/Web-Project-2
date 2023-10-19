@@ -1,0 +1,96 @@
+<!-- Name: Chizara Anyanwu
+Course: Web Development 20S
+Teacher: Ms. Hoitink
+School: Pembina Trails Collegiate(PTC)
+Date Last Modified: 18/10/23 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivian's Kitchen</title>
+  <link rel="stylesheet" href="stylesheets/css-page-styles.css" />
+  <style>
+    /* Background around mission statement */
+    #our-mission{
+      background-color: #DDA15E;
+      border: 25px;
+      margin: 20px;
+    }
+    /* Changes background color and makes scroll possible */
+    #scroll-container  {
+      background-color: #333;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px;
+    }
+    /* Gives all images in the div tag padding */
+    #scroll-container img {
+      padding: 10px;
+    }
+  </style>
+</head>
+<!-- Navigation bar -->
+<nav>
+  <ul>
+    <li><a href="index.html">About us</a></li>
+    <li><a href="different-recipes.html">Take a look at her acclaimed recipes!</a></li>
+    <li><a href="order-cookbook.html">Order her famous cookbook</a></li>
+  </ul>
+</nav>
+<!-- Title of website -->
+<header>
+  <h1>Vivian's Kitchen</h1>
+  <p>A collection of recipes and anecdotes from the best cook in the world</p>
+</header>
+<body>
+  <main>
+    <!-- Background info on the blog -->
+    <section>
+      <h2>About Us</h2>
+      <p>On the dawn of the 1980s, in a univerisy hospital in Lagos, Nigeria a miracle happened.
+      The best person the world has every seen was born. During her formative years, she would learn how to cook and later,
+      give birth to two children with here loving husband. She moved to America in 2018, 
+      leaving behind her family and friends for the chance of a better life. Durng that time, Vivian endured many struggles but managed to survive. She never failed to bring a smile to her children's faces and entertain their very many hobbies.
+      She always made sure to put food on the table, teaching all her recipes to her youngest daughter, Chizara.
+      From bread, to soups, the pair experimented with ingredients in their new country. In 2020 her family moved to Canada, an even stranger country. She persevered and found new family there, creating new recipes with Canadian ingredients.
+      Her youngest daughter has learnt all there's to be taught and is making meals of her own.</p>
+      <p>One of those children convinced her to share her recipes online. 
+      Wanting the world to have a taste of her delicous food, she started this blog.</p>
+    </section>
+    <!-- Pics of different foods in a slideshow -->
+    <article>
+      <h2>Different foods made by Vivian</h2>
+      <figure>
+      <div id="scroll-container">
+        <img src="Images/jollof-rice.jpg" alt="A picture of the delicious jollof rice our founder made" width="600" height="600" />
+        <img src="Images/yam-sauce.jpg" alt="A picture of a yam sauce our founder made with eggs and tomatoes" width="600" height="600" />
+        <img src="Images/cake.jpg" alt="A picture of a swirl cake baked by the founder" width="600" height="600" />
+        <img src="Images/pasta-sauce.jpg" alt="A picture of pasta and sauce cooked by the founder, Vivian " width="600" height="600" />
+      </div>
+      <figcaption>A collection of images showing different foods made by Vivian</figcaption>
+      </figure>
+    </article>
+    <!-- Website's mission/ its goal -->
+    <section>
+      <div id="our-mission">
+        <h3>Our Mission</h3>
+        <p>Established in 2023, Vivians Kitchen aims to educate people on the joy of cooking. We seek to share our founder's 
+        delicious recipes with the rest of the world.No one should be left without good,
+        <span class="bold-text">homecooked</span> meals.</p>
+        <p>We provide a variety of recipes from traditional 
+        Nigerian foods to complex pastries to fusion foods. Vivian's Kitchen is a complex library of all foods from 
+        the basic to the complex and most importantly, a comphrehensive look at cooking. We aim to teach the core of cooking and the creation of new recipes. Families with low-budgets
+        We understand people are in different financial states and have accomodated for that in our recipes.
+        </p>
+        <p>Above all, we want to teach the joy of creating and sharing food with family and friends.</p>
+      </div>
+    </section>
+  </main>
+</body>
+<!-- Footer across websites, style is external -->
+<footer>
+  <p>Copyright &copy; 2023 Vivian's Kitchen. All rights reserved.</p>
+  <p>Contact us at: 123-456-789</p>
+</footer>
+</html>
